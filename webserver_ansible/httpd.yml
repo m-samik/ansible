@@ -5,6 +5,10 @@
      package: 
        name: "httpd"
        state: "present"
+   - name: Adding Website Files 
+     copy:
+       src: "index.php"
+       dest: "/var/www/html"
    - name: Starting HTTPD Service
      service:
        name: "httpd"

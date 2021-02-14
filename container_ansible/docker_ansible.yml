@@ -1,0 +1,21 @@
+- name: Configuring Docker 
+  hosts: all
+  
+  tasks:
+  - name: "Configuring YUM for docker"
+    yum_repository:
+     name: DOCKER
+     description: REPO for Docker
+     baseurl: https://download.docker.com/linux/centos/7/x86_64/stable/
+     gpgcheck: no
+  - name: "Installing Docker "
+    command: yum install docker-ce --nobest -y
+  - name: "Starting Docker Service"
+    service: 
+     name: docker
+     state: started
+  - name: "Pulling Centos Image from Docker Hub"
+    command: docker pull centos
+  - name: "Launching an Container from DOCKER "
+    command: docker run centos:latest
+
