@@ -1,0 +1,11 @@
+- name: Web Server Configuration
+  hosts: all
+  tasks:
+   - name: Installing HTTPD PACKAGE
+     package: 
+       name: "httpd"
+       state: "present"
+   - name: Starting HTTPD Service
+     service:
+       name: "httpd"
+       state: "started"

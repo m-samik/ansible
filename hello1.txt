@@ -1,0 +1,4 @@
+192.168.1.1 ansible_user=msamik ansible_ssh_pass=redhat ansible_connection=ssh
+192.168.1.24 ansible_user=root ansible_ssh_pass=redhat ansible_connection=ssh
+admin ansible_user=admin ansible_ssh_pass=admin ansible_connection=ssh
+15.2.012.23 ansible_user=redhat ansible_ssh_pass=s@mi@123$$ ansible_connection=ssh
