@@ -10,7 +10,7 @@
          host: smtp.gmail.com
          port: 587
          username: muhammad.sami2706@gmail.com
-         password: 6005016509@123
+         password: 
          to: Muhammad Sami <msamikhanday@gmail.com>,Muhammad Tabish <taabishkhanday@gmail.com>
          subject: Ansible-report 
          body: System {{ ansible_hostname }} has been successfully provisioned on {{ ansible_date_time.date }} {{ ansible_date_time.weekday }} at {{ ansible_date_time.time }}. 
